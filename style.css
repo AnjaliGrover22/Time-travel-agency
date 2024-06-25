@@ -1,0 +1,147 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family:'Times New Roman', Times, serif;
+
+}
+
+.headerbox{
+
+display:flex;
+justify-content: space-between;
+padding:14px 20px;
+background-color: #FC0;
+border:2px solid red;
+margin-left:2px;
+align-items: flex-start;
+
+
+}
+
+header nav,footer nav {
+    display: flex; /* Make nav a flex container */
+  }
+
+  header nav ul,footer nav ul {
+    display: flex; /* Make ul a flex container */
+    gap: 20px; /* Add space between list items if desired */
+  }
+
+nav a {
+
+text-decoration:none;
+color:darkgreen;
+font-weight: 700;
+}
+
+nav a:hover{
+
+color:red;
+
+}
+
+header nav ul li , footer nav ul li  {
+
+ list-style-type: none;
+ 
+    }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+
+    body{
+
+        background-color: lightslategrey
+
+    }
+    
+    .gallery-container{
+        font-family: Arial, sans-serif;
+        text-align: center; 
+   ;
+    
+    
+    }
+    
+    
+    .gallery{
+    
+        margin: 1.5rem;
+        display:grid;
+        gap:1rem;
+        grid-template-columns:1fr 1fr 1fr;
+       row-gap:0.5em;
+        
+    
+    }
+    
+    .gallery-item img{
+    width:80%;
+    height:80%;
+    object-fit: cover;
+    border-radius: 5%;
+    
+    
+    }
+
+    footer{
+
+        background-color: #b7d7e8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        
+
+
+    }
+
+    h1{
+
+        text-shadow: #FC0 1px 0 10px;
+        color:red;
+        padding: 1.5rem 1.5rem;
+
+    }
+
+    /* Applying responsiveness */
+@media screen and (min-width:320px) and (max-width:455px){
+    .headerbox, .footerbox{
+
+       flex-direction:column;
+       align-items: flex-start;
+       gap: 20px;
+       padding-left: 2rem ;
+      
+        
+        
+        }
+
+        header nav, footer nav {
+            flex-direction: column; /* Make nav a flex container */
+            justify-content: center;
+            align-items: flex-end;
+       
+          }
+        
+          header nav ul ,footer nv ul{
+            flex-direction: column; /* Make ul a flex container */
+            gap: 2px; /* Add space between list items if desired */
+               
+          }
+
+          header nav ul li, footer nav ul li {
+            list-style-type:square;
+          }
+
+          nav a:hover{
+             text-decoration: underline;
+
+          }
+
+    
+}
